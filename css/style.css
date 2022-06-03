@@ -1,0 +1,75 @@
+
+body{
+    background: #1C1C1C;
+}
+.stepper__btn--up svg{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: rotate(180deg);
+}
+.stepper__btn--down svg{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.stepper{
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1px solid #494949;
+    width: 150px;
+    height: 50px;
+    user-select: none;
+}
+.stepper-field{
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid 4px;
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    overflow: hidden;
+}
+.stepper__input{
+    border: none;
+    width: 10px;
+    color:#fff;
+    height: 100%;
+    background: none;
+    outline: none;
+    font-weight: 700;
+    min-width: 2ex;
+}
+.stepper__text{
+    font-weight: 700;
+    color: #fff ;
+}
+.stepper-btns{
+    position: absolute;
+    right: 2px;
+    top:50%;
+    flex-direction: column;
+    border-left: 1px solid #4e4e4e;
+    display: flex;
+    width: 20%;
+    height: calc(100% - 2px);
+    transform: translateY(-50%);
+}
+.stepper__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: none;
+    height: 50%;
+    background-color: transparent;
+    cursor: pointer;
+}
+.stepper__btn--disabled{
+    opacity: 0.5;
+    pointer-events: none;
+}

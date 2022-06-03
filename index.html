@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="stepper">
+        <label class="stepper-field">
+            <input value="1" type="text" maxlength="3" class="stepper__input" onkeypress="allowNumbersOnly(event)">
+            <span class="stepper__text">шт</span>
+        </label>
+        <div class="stepper-btns">
+            <button class="stepper__btn stepper__btn--up">
+                <svg width="15px" height="15px" viewBox="0 0 15 15" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.49988 12L-0.00012207 4L14.9999 4L7.49988 12Z" fill="#fff"/>
+                    </svg>
+                    
+            </button>
+            <button class="stepper__btn stepper__btn--down stepper__btn--disabled">
+                <svg width="15px" height="15px" viewBox="0 0 15 15" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.49988 12L-0.00012207 4L14.9999 4L7.49988 12Z" fill="#fff"/>
+                    </svg>
+                    
+            </button>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
